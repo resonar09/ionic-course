@@ -1,2 +1,2 @@
-# ionic-angular-course
+# ionic-course
 test
