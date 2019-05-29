@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Discover Places</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2" text-center>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{ this.loadedPlaces[0].title }}</ion-card-title>
+            <ion-card-subtitle>{{ this.loadedPlaces[0].price | currency }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-img [src]="loadedPlaces[0].imageUrl"> </ion-img>
+          <ion-card-content>
+              <p>{{ this.loadedPlaces[0].description }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
