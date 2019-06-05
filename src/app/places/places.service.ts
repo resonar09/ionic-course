@@ -10,10 +10,6 @@ export class PlacesService {
     'In the heart of NY',
     'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Manhattan_Skyline_night.jpg/800px-Manhattan_Skyline_night.jpg',
     149.99),
-    new Place('p1', 'Mahattan Mansion',
-    'In the heart of NY',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Manhattan_Skyline_night.jpg/800px-Manhattan_Skyline_night.jpg',
-    149.99),
     new Place('p2', 'Cali Beach Place',
     'On the beach in Cali',
     'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Manhattan_Skyline_night.jpg/800px-Manhattan_Skyline_night.jpg',
@@ -27,5 +23,9 @@ export class PlacesService {
   get places() {
     return [...this._places];
   }
+
   constructor() { }
+  getPlace(id: string) {
+    return {...this._places.find( p => p.id === id)};
+  }
 }
