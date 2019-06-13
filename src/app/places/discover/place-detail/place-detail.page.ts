@@ -4,6 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { NavController, ModalController } from '@ionic/angular';
 import { PlacesService } from '../../places.service';
 import { Place } from '../../place.model';
+import { SegmentChangeEventDetail } from '@ionic/core';
 @Component({
   selector: 'app-place-detail',
   templateUrl: './place-detail.page.html',
@@ -44,5 +45,6 @@ export class PlaceDetailPage implements OnInit {
     });
 
   }
+
 
 }
