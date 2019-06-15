@@ -75,3 +75,9 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+.ion-invalid.ion-touched ion-label {
+  color: var(--ion-color-danger);
+}
+ion-item .ion-invalid.ion-touched{
+  border-bottom-color: var(--ion-color-danger);
+}
